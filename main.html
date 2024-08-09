@@ -10,6 +10,7 @@
         .block-heading {
             color: #3b99e0;
             margin-bottom: 20px;
+            text-align: center; 
         }
         .summary {
             border-top: 2px solid #5ea4f3;
@@ -28,65 +29,70 @@
         .product .col-3 {
             align-self: center;
         }
+        .product .row {
+            display: flex;
+        }
     </style>
 </head>
 <body>
 
 <div class="container mt-5">
     <!-- Heading -->
-    <h2 class="text-center block-heading">Shopping cart</h2>
-    <p class="text-center">The customer is very important, the customer will be followed by the customer. Now, as an urn, I have no right to be in possession of property.</p>
+    <div class="block-heading">
+        <h2>Shopping cart</h2>
+        <p>The customer is very important, the customer will be followed by the customer. Now, as an urn, I have no right to be in possession of property.</p>
+    </div>
     
     <div class="row">
-        <!-- Products Section -->
         <div class="col-lg-8">
-            <div class="product row mb-3">
-                <div class="col-2">
-                    <img src="https://t4.ftcdn.net/jpg/05/36/24/13/360_F_536241340_GsrsNhcWC0hyTVaJLilNafyDw6fl0cC8.jpg" class="img-fluid" alt="Product">
+            <div class="product">
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <img src="https://t4.ftcdn.net/jpg/05/36/24/13/360_F_536241340_GsrsNhcWC0hyTVaJLilNafyDw6fl0cC8.jpg" class="img-fluid" alt="Product">
+                    </div>
+                    <div class="col-6">
+                        <h6><a href="#">I am very sorry</a></h6> <!-- Added anchor tag here -->
+                        <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control" value="0" min="0">
+                    </div>
+                    <div class="col-2 text-end">
+                        <p>$120</p>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <h6>I am very sorry</h6>
-                    <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <img src="https://t4.ftcdn.net/jpg/05/36/24/13/360_F_536241340_GsrsNhcWC0hyTVaJLilNafyDw6fl0cC8.jpg" class="img-fluid" alt="Product">
+                    </div>
+                    <div class="col-6">
+                        <h6><a href="#">I am very sorry</a></h6> <!-- Added anchor tag here -->
+                        <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control" value="1" min="0">
+                    </div>
+                    <div class="col-2 text-end">
+                        <p>$120</p>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <input type="number" class="form-control" value="0" min="0">
-                </div>
-                <div class="col-2 text-end">
-                    <p>$120</p>
-                </div>
-            </div>
-            <div class="product row mb-3">
-                <div class="col-2">
-                    <img src="https://t4.ftcdn.net/jpg/05/36/24/13/360_F_536241340_GsrsNhcWC0hyTVaJLilNafyDw6fl0cC8.jpg" class="img-fluid" alt="Product">
-                </div>
-                <div class="col-6">
-                    <h6>I am very sorry</h6>
-                    <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
-                </div>
-                <div class="col-2">
-                    <input type="number" class="form-control" value="1" min="0">
-                </div>
-                <div class="col-2 text-end">
-                    <p>$120</p>
-                </div>
-            </div>
-            <div class="product row mb-3">
-                <div class="col-2">
-                    <img src="https://t4.ftcdn.net/jpg/05/36/24/13/360_F_536241340_GsrsNhcWC0hyTVaJLilNafyDw6fl0cC8.jpg" class="img-fluid" alt="Product">
-                </div>
-                <div class="col-6">
-                    <h6>I am very sorry</h6>
-                    <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
-                </div>
-                <div class="col-2">
-                    <input type="number" class="form-control" value="1" min="0">
-                </div>
-                <div class="col-2 text-end">
-                    <p>$120</p>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <img src="https://t4.ftcdn.net/jpg/05/36/24/13/360_F_536241340_GsrsNhcWC0hyTVaJLilNafyDw6fl0cC8.jpg" class="img-fluid" alt="Product">
+                    </div>
+                    <div class="col-6">
+                        <h6><a href="#">I am very sorry</a></h6> <!-- Added anchor tag here -->
+                        <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control" value="1" min="0">
+                    </div>
+                    <div class="col-2 text-end">
+                        <p>$120</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Summary Section -->
         <div class="col-lg-4">
             <div class="summary">
                 <h6>Summary</h6>
@@ -113,7 +119,6 @@
     </div>
 </div>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
